@@ -276,9 +276,9 @@ class dataValidator(object):
         return errormessage
 
     def predict(self,data):
-        regressor = joblib.load(r"C:\Users\Yogesh.Tiwari\PycharmProjects\pythonProject\Positive_Per_Sq_Pune_pk_15feb.pkl")
-        dd=pd.read_csv(r"C:\Users\Yogesh.Tiwari\PycharmProjects\pythonProject\ABC_ref.csv")
-        gi_da=pd.read_excel(r"C:\Users\Yogesh.Tiwari\PycharmProjects\pythonProject\GIS_LOC_FEATURE_PUNE.xlsx")
+        regressor = joblib.load(r"Positive_Per_Sq_Pune_pk_15feb.pkl")
+        dd=pd.read_csv(r"ABC_ref.csv")
+        gi_da=pd.read_excel(r"GIS_LOC_FEATURE_PUNE.xlsx")
         event = data
         print(event)
         hello=[]
